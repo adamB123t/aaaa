@@ -1,12 +1,18 @@
 const firebaseConfig = {
-  //   copy your firebase config informations
+  apiKey: "AIzaSyBm7B83x4ZQB8OMQ7k_OgOUgU_Mhc7xXOY",
+  authDomain: "contatform-you.firebaseapp.com",
+  databaseURL: "https://contatform-you-default-rtdb.firebaseio.com",
+  projectId: "contatform-you",
+  storageBucket: "contatform-you.appspot.com",
+  messagingSenderId: "763714273380",
+  appId: "1:763714273380:web:f5d5032a4dbe2dc91d9f71"
 };
 
 // initialize firebase
 firebase.initializeApp(firebaseConfig);
 
 // reference your database
-var contactFormDB = firebase.database().ref("contactForm");
+var contactFormDB = firebase.database().ref("cccc");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
