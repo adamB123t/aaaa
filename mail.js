@@ -34,7 +34,7 @@ function submitForm(e) {
   }, 3000);
 
   //   reset the form
-  document.getElementById("contactForm").reset();
+  document.getElementById("cccc").reset();
 }
 
 const saveMessages = (name, emailid, msgContent) => {
