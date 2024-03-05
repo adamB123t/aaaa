@@ -20,7 +20,7 @@ function submitForm(e) {
   e.preventDefault();
 
   var name = getElementVal("name");
-  var emailid = getElementVal("emailid");
+  var emailid = getElementVal("email");
 
   saveMessages(name, emailid);
 
