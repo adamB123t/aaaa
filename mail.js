@@ -12,7 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // reference your database
-var contactFormDB = firebase.database().ref("contatform-you");
+var contactFormDB = firebase.database().ref("cccc");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
@@ -21,9 +21,8 @@ function submitForm(e) {
 
   var name = getElementVal("name");
   var emailid = getElementVal("emailid");
-  var msgContent = getElementVal("msgContent");
 
-  saveMessages(name, emailid, msgContent);
+  saveMessages(name, emailid);
 
   //   enable alert
   document.querySelector(".alert").style.display = "block";
@@ -34,16 +33,15 @@ function submitForm(e) {
   }, 3000);
 
   //   reset the form
-  document.getElementById("contatform-you").reset();
+  document.getElementById("cccc").reset();
 }
 
-const saveMessages = (name, emailid, msgContent) => {
+const saveMessages = (name, emailid) => {
   var newContactForm = contactFormDB.push();
 
   newContactForm.set({
     name: name,
     emailid: emailid,
-    msgContent: msgContent,
   });
 };
 
