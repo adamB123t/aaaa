@@ -12,7 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // reference your database
-var contactFormDB = firebase.database().ref("cccc");
+var contactFormDB = firebase.database().ref("contatform-you");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
@@ -34,7 +34,7 @@ function submitForm(e) {
   }, 3000);
 
   //   reset the form
-  document.getElementById("cccc").reset();
+  document.getElementById("contatform-you").reset();
 }
 
 const saveMessages = (name, emailid, msgContent) => {
