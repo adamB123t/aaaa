@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 const firebaseConfig = {
   apiKey: "AIzaSyBm7B83x4ZQB8OMQ7k_OgOUgU_Mhc7xXOY",
   authDomain: "contatform-you.firebaseapp.com",
@@ -10,44 +8,43 @@ const firebaseConfig = {
   appId: "1:763714273380:web:f5d5032a4dbe2dc91d9f71"
 };
 
-
-// Initialize firebase
+// initialize firebase
 firebase.initializeApp(firebaseConfig);
 
-// Reference your database
+// reference your database
 var contactFormDB = firebase.database().ref("cccc");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
 function submitForm(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    var name = getElementVal("name");
-    var emailid = getElementVal("emailid");
+  var name = getElementVal("name");
+  var emailid = getElementVal("emailid");
 
-    saveMessages(name, emailid);
+  saveMessages(name, emailid);
 
-    // Enable alert
-    document.querySelector(".alert").style.display = "block";
+  //   enable alert
+  document.querySelector(".alert").style.display = "block";
 
-    // Remove the alert
-    setTimeout(() => {
-        document.querySelector(".alert").style.display = "none";
-    }, 3000);
+  //   remove the alert
+  setTimeout(() => {
+    document.querySelector(".alert").style.display = "none";
+  }, 3000);
 
-    // Reset the form
-    document.getElementById("contactForm").reset();
+  //   reset the form
+  document.getElementById("cccc").reset();
 }
 
 const saveMessages = (name, emailid) => {
-    var newContactForm = contactFormDB.push();
+  var newContactForm = contactFormDB.push();
 
-    newContactForm.set({
-        name: name,
-        emailid: emailid,
-    });
+  newContactForm.set({
+    name: name,
+    emailid: emailid,
+  });
 };
 
 const getElementVal = (id) => {
-    return document.getElementById(id).value;
+  return document.getElementById(id).value;
 };
