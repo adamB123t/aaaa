@@ -1,7 +1,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyBm7B83x4ZQB8OMQ7k_OgOUgU_Mhc7xXOY",
   authDomain: "contatform-you.firebaseapp.com",
-  databaseURL: "https://contatform-you-default-rtdb.firebaseio.com/",
+  databaseURL: "https://contatform-you-default-rtdb.firebaseio.com",
   projectId: "contatform-you",
   storageBucket: "contatform-you.appspot.com",
   messagingSenderId: "763714273380",
