@@ -12,7 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // Reference your database correctly (assuming "contacts" is the correct node name)
-var contactFormDB = firebase.database().ref("contacts");
+var contactFormDB = firebase.database().ref("cccc");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
