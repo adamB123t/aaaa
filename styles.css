@@ -107,6 +107,20 @@ form .submit:hover {
   background: #03ad06;
   cursor: pointer;
 }
+.login-button {
+  outline: none;
+  border: none;
+  background: #06b909; /* Set your desired background color */
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #03ad06; /* Set your desired hover color */
+}
 
 /* //.........Media Query.........// */
 
