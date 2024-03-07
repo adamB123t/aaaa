@@ -117,6 +117,7 @@ form .submit:hover {
   color: #fff;
   width: 75%;
   margin: 0 auto;
+  display: block;
 }
 
 .login-button:hover {
