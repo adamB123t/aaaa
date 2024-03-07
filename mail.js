@@ -8,11 +8,11 @@ const firebaseConfig = {
   appId: "1:763714273380:web:f5d5032a4dbe2dc91d9f71"
 };
 
-// initialize firebase
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-// reference your database
-var contactFormDB = firebase.database().ref("cccc");
+// Reference your database correctly (assuming "contacts" is the correct node name)
+var contactFormDB = firebase.database().ref("contacts");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
@@ -24,16 +24,16 @@ function submitForm(e) {
 
   saveMessages(name, emailid);
 
-  //   enable alert
+  // Enable alert
   document.querySelector(".alert").style.display = "block";
 
-  //   remove the alert
+  // Remove the alert
   setTimeout(() => {
     document.querySelector(".alert").style.display = "none";
   }, 3000);
 
-  //   reset the form
-    document.getElementById("contactForm").reset();
+  // Reset the form
+  document.getElementById("contactForm").reset();
 }
 
 const saveMessages = (name, emailid) => {
