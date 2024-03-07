@@ -33,7 +33,7 @@ function submitForm(e) {
   }, 3000);
 
   //   reset the form
-  document.getElementById("cccc").reset();
+    document.getElementById("contactForm").reset();
 }
 
 const saveMessages = (name, emailid) => {
