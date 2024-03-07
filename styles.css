@@ -91,7 +91,7 @@ form hr {
   margin: 1rem;
 }
 
-form .create-account {
+form .submit {
   outline: none;
   border: none;
   background: #06b909;
@@ -103,7 +103,7 @@ form .create-account {
   margin: 0 auto;
 }
 
-form .create-account:hover {
+form .submit:hover {
   background: #03ad06;
   cursor: pointer;
 }
