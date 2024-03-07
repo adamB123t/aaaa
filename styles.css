@@ -63,7 +63,7 @@ form input:focus {
   border: 1.8px solid #1877f2;
 }
 
-form .login {
+form .submit {
   outline: none;
   border: none;
   background: #1877f2;
